@@ -6,6 +6,205 @@
 html,
 body {
     height: 100%;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+.container {
+    width: 1020px;
+    height: 480px;
+    display: flex;
+    gap: 30px;
+}
+
+.name_container {
+    width: 235px;
+    height: 325px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.jeremy_image {
+    background-image: url(../../images/image-jeremy.png);
+    background-repeat: round;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.r_f {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+}
+
+.j_r {
+    font-weight: 300;
+}
+
+.d_w_m_container {
+    width: 235px;
+    height: 155px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 0;
+    margin-top: -5px;
+}
+
+.d_w_m_list {
+    list-style-type: none;
+}
+
+.d_w_m_list_item {
+    margin-bottom: 16px;
+    color: hsl(236, 100%, 87%);
+}
+
+.d_w_m_list_item:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.d_w_m_list_item.active {
+    color: white;
+}
+
+.icon_work_container,
+.icon_exercise_container,
+.icon_play_container,
+.icon_social_container,
+.icon_study_container,
+.icon_self_care_container {
+    width: 235px;
+    height: 55px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.work,
+.exercise,
+.play,
+.social,
+.study,
+.self_care {
+    width: 235px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.work:hover,
+.exercise:hover,
+.play:hover,
+.social:hover,
+.study:hover,
+.self_care:hover {
+    background-color: hsl(235deg 39.03% 39.75%);
+    cursor: pointer;
+}
+
+.icon_container {
+    overflow: hidden;
+}
+
+.icon_container img {
+    position: relative;
+    left: 140px;
+    bottom: 8px;
+}
+
+.icon_work_container {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.icon_exercise_container {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.icon_play_container {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.icon_social_container {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.icon_study_container {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.icon_self_care_container {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.icon_exercise_container img {
+    position: relative;
+    left: 140px;
+    bottom: 0px;
+}
+
+.icon_social_container img {
+    bottom: 15px;
+}
+
+.p_work_ellipsis,
+.p_exercise_ellipsis,
+.p_play_ellipsis,
+.p_social_ellipsis,
+.p_study_ellipsis,
+.p_self_care_ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exercise_container,
+.social_container,
+.self_care_container {
+    margin-top: 25px;
+}
+
+.work_hours,
+.exercise_hours,
+.play_hours,
+.social_hours,
+.study_hours,
+.self_care_hours {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.last_week_work,
+.last_week_exercise,
+.last_week_play,
+.last_week_social,
+.last_week_study,
+.last_week_self_care {
+    margin-top: 5px;
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
 }
 
 .attribution {
@@ -13,7 +212,6 @@ body {
     width: 100%;
     height: 80px;
     bottom: 30px;
-    font-family: Manrope;
     font-size: 16px;
     font-weight: 700;
     text-align: center;
@@ -22,6 +220,137 @@ body {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(348, 100%, 68%);
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name_container {
+        width: 235px;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .jeremy_image {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 10px;
+
+    }
+
+    .r_f_j_r_container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 5px;
+        line-height: 20px;
+    }
+
+    .j_r {
+        font-size: 16px;
+        color: hsl(236, 100%, 87%);
+    }
+
+    .r_f {
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    .d_w_m_container {
+        width: 235px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .d_w_m_list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        font-size: 13px;
+        position: relative;
+        top: 5px;
+    }
+
+    .work,
+    .exercise,
+    .play,
+    .social,
+    .study,
+    .self_care {
+        height: 75px;
+        padding: 15px;
+    }
+
+    .icon_work_container,
+    .icon_exercise_container,
+    .icon_play_container,
+    .icon_social_container,
+    .icon_study_container,
+    .icon_self_care_container {
+        height: 35px;
+    }
+
+    .p_work_ellipsis,
+    .p_exercise_ellipsis,
+    .p_play_ellipsis,
+    .p_social_ellipsis,
+    .p_study_ellipsis,
+    .p_self_care_ellipsis {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .p_work_ellipsis img,
+    .p_exercise_ellipsis img,
+    .p_play_ellipsis img,
+    .p_social_ellipsis img,
+    .p_study_ellipsis img,
+    .p_self_care_ellipsis img {
+        width: 18px;
+    }
+
+    .work_hours,
+    .exercise_hours,
+    .play_hours,
+    .social_hours,
+    .study_hours,
+    .self_care_hours {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .hours_last_week_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    .last_week_work,
+    .last_week_exercise,
+    .last_week_play,
+    .last_week_social,
+    .last_week_study,
+    .last_week_self_care {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .attribution {
+        display: none;
+    }
+
 }

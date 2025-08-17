@@ -15,61 +15,180 @@
 </head>
 
 <body>
+    <div class="container">
 
-    Report for
-    Jeremy Robson
+        <div class="container_one">
 
-    Daily
-    Weekly
-    Monthly
+            <div class="name_container">
 
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
+                <div class="jeremy_image"></div>
 
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
+                <div class="r_f_j_r_container">
+                    <p class="r_f">Report for</p>
+                    <h1 class="j_r">Jeremy Robson</h1>
+                </div>
 
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
+            </div>
 
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
+            <div class="d_w_m_container">
+                <ul class="d_w_m_list">
+                    <li id="daily_menu" class="d_w_m_list_item" onclick="onDailyClick()">Daily</li>
+                    <li id="weekly_menu" class="d_w_m_list_item" onclick="onWeeklyClick()">Weekly</li>
+                    <li id="monthly_menu" class="d_w_m_list_item" onclick="onMonthlyClick()">Monthly</li>
+                </ul>
+            </div>
 
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
+        </div>
 
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
+        <div class="container_two">
+
+            <div class="work_container">
+
+                <div class="icon_container icon_work_container">
+                    <img src="../images/icon-work.svg" alt="">
+                </div>
+
+                <div class="work">
+
+                    <div class="p_work_ellipsis">
+                        <p>Work</p>
+                        <img src="../images/icon-ellipsis.svg" alt="">
+                    </div>
+
+                    <div class="hours_last_week_container">
+                        <h1 id="work_hours" class="work_hours">32hrs</h1>
+                        <p class="last_week_work" id="last_week_work">Last Week - 36hrs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="exercise_container">
+
+                <div class="icon_container icon_exercise_container">
+                    <img src="../images/icon-exercise.svg" alt="">
+                </div>
+
+                <div class="exercise">
+
+                    <div class="p_exercise_ellipsis">
+                        <p>Exercise</p>
+                        <img src="../images/icon-ellipsis.svg" alt="">
+                    </div>
+
+                    <div class="hours_last_week_container">
+                        <h1 id="exercise_hours" class="exercise_hours">4hrs</h1>
+                        <p id="last_week_exercise" class="last_week_exercise">Last Week - 5hrs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container_three">
+
+            <div class="play_container">
+
+                <div class="icon_container icon_play_container">
+                    <img src="../images/icon-play.svg" alt="">
+                </div>
+
+                <div class="play">
+
+                    <div class="p_play_ellipsis">
+                        <p>Play</p>
+                        <img src="../images/icon-ellipsis.svg" alt="">
+                    </div>
+
+                    <div class="hours_last_week_container">
+                        <h1 id="play_hours" class="play_hours">10hrs</h1>
+                        <p id="last_week_play" class="last_week_play">Last Week - 8hrs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="social_container">
+
+                <div class="icon_container icon_social_container">
+                    <img src="../images/icon-social.svg" alt="">
+                </div>
+
+                <div class="social">
+
+                    <div class="p_exercise_ellipsis">
+                        <p>Social</p>
+                        <img src="../images/icon-ellipsis.svg" alt="">
+                    </div>
+
+                    <div class="hours_last_week_container">
+                        <h1 id="social_hours" class="social_hours">5hrs</h1>
+                        <p id="last_week_social" class="last_week_social">Last Week - 10hrs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container_four">
+
+            <div class="study_container">
+
+                <div class="icon_container icon_study_container">
+                    <img src="../images/icon-study.svg" alt="">
+                </div>
+
+                <div class="study">
+
+                    <div class="p_study_ellipsis">
+                        <p>Study</p>
+                        <img src="../images/icon-ellipsis.svg" alt="">
+                    </div>
+
+                    <div class="hours_last_week_container">
+                        <h1 id="study_hours" class="study_hours">4hrs</h1>
+                        <p id="last_week_study" class="last_week_study">Last Week - 7hrs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="self_care_container">
+
+                <div class="icon_container icon_self_care_container">
+                    <img src="../images/icon-self-care.svg" alt="">
+                </div>
+
+                <div class="self_care">
+
+                    <div class="p_self_care_ellipsis">
+                        <p>Self Care</p>
+                        <img src="../images/icon-ellipsis.svg" alt="">
+                    </div>
+
+                    <div class="hours_last_week_container">
+                        <h1 id="self_care_hours" class="self_care_hours">2hrs</h1>
+                        <p id="last_week_self_care" class="last_week_self_care">Last Week - 2hrs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <div class="attribution">
@@ -77,7 +196,9 @@
             target="_blank">Frontend Mentor</a>
         Coded by <a href="https://github.com/andreslondono00/time-tracking-dashboard" target="_blank">Andrés Londoño</a>
     </div>
+
     <script type="text/javascript" src="js/dashboard.js"></script>
+
 </body>
 
 </html>
