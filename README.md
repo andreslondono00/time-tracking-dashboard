@@ -47,15 +47,15 @@ Users should be able to:
 
 - Daily
 
-  ![alt text]({3DBEBE2B-360B-458A-BC02-CFADF16F7C9A}.png)
+  ![alt text]({022F7375-883D-4D21-AB86-A0755584F623}.png)
 
 - Weekly
   
-  ![alt text]({741A5D12-1ACE-48D4-94A2-579553636620}.png)
+  ![alt text]({8F0840F6-6440-4AFE-A1E8-51DBD5C167FC}.png)
 
 - Monthly
   
-  ![alt text]({5DFDB080-B1B3-4613-A549-A2F9D47F2B03}.png)
+  ![alt text]({D5205B4B-697D-45C0-A4A3-E5A852CCADF0}.png)
 
 ### Links
 
